@@ -46,12 +46,12 @@
      </header>
 
     <!-- main -->
-     <main>
+     <main class="p-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <!-- titolo -->
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
                             <h2>
                                 Catalogo libri
                             </h2>
@@ -64,7 +64,7 @@
                             <!-- inizio riga -->
                           <tr>
                             <th scope="col">Titolo</th>
-                            <th scope="col">Data prestito</th>
+                            <th scope="col" class="d-none d-sm-table-cell">Data prestito</th>
                             <th scope="col">Stato</th>
                             <th scope="col">Azioni</th>
                           </tr>
@@ -72,11 +72,12 @@
                         <tbody>
                           <tr>
                             <td scope="row">I pilastri della terra</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                          
                             <td>
                                 <span class="badge rounded-pill text-bg-success">disponibile</span>
                             </td>
-                            <td>
+                            <td class="d-flex gap-2">
                                 <button class="btn btn-outline-secondary">
                                     <i class="fa-solid fa-pencil"></i>
                                 </button>
@@ -87,7 +88,7 @@
                           </tr>
                           <tr>
                             <td scope="row">I promessi sposi</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-success">disponibile</span>
                             </td>
@@ -102,7 +103,7 @@
                           </tr>
                           <tr>
                             <td scope="row">Il signore degli anelli</td>
-                            <td>18/10/2023</td>
+                            <td class="d-none d-sm-table-cell">18/10/2023</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-warning text-light">In prestito</span>
                             </td>
@@ -117,7 +118,7 @@
                           </tr>
                           <tr>
                             <td scope="row">Harry Potter e la pietra filosofale</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-success">disponibile</span>
                             </td>
@@ -132,7 +133,7 @@
                           </tr>
                           <tr>
                             <td scope="row">Il Codice Da Vinci</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-danger"> Non disponibile</span>
                             </td>
@@ -147,7 +148,7 @@
                           </tr>
                           <tr>
                             <td scope="row">Shining</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-success">disponibile</span>
                             </td>
@@ -162,7 +163,7 @@
                           </tr>
                           <tr>
                             <td scope="row">La divina commedia</td>
-                            <td>21/09/2023</td>
+                            <td class="d-none d-sm-table-cell">21/09/2023</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-warning text-light">In prestito</span>
                             </td>
@@ -177,7 +178,7 @@
                           </tr>
                           <tr>
                             <td scope="row">Il trono di spade </td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-danger">Non disponibile</span>
                             </td>
@@ -192,7 +193,52 @@
                           </tr>
                           <tr>
                             <td scope="row">I pilastri della terra</td>
-                            <td>-</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>
+                                <span class="badge rounded-pill text-bg-success">disponibile</span>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">I pilastri della terra</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>
+                                <span class="badge rounded-pill text-bg-success">disponibile</span>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Il gigante del campetto</td>
+                            <td class="d-none d-sm-table-cell">18/10/2023</td>
+                            <td>
+                                <span class="badge rounded-pill text-bg-warning text-light">In prestito</span>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Il piccolo principe</td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td>
                                 <span class="badge rounded-pill text-bg-success">disponibile</span>
                             </td>
@@ -209,7 +255,29 @@
                       </table>
                 </div>
                 <div class="col-12 col-lg-4">
-                    2
+                    <div class="card">
+                        <h5 class="card-header">Todo</h5>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Chiamare segreteria
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Mandare avvisi prestiti scaduti
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Ordinare nuovi libri
+                                </label>
+                              </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
